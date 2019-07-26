@@ -1,0 +1,84 @@
+﻿<Page x:Class="DIH_core.Pages.MethodPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DIH_core.Pages"
+      xmlns:ts ="clr-namespace:DIH_core.TemplateSelectors"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Step 2 - Set up the hiding method!">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="50*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="6*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="9*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label
+            FontWeight="Bold"
+            Grid.Column="1"
+            Grid.Row="2"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            >Hiding method</Label>
+        <ComboBox
+            Grid.Column="1"
+            Grid.Row="4"
+            SelectedItem="{Binding SelectedMethod}"
+            ItemsSource="{Binding HidingMethods}"
+            ></ComboBox>
+        <Label
+            FontWeight="Bold"
+            Grid.Column="1"
+            Grid.Row="6"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            >Description</Label>
+        <TextBlock
+            Grid.Column="1"
+            Grid.Row="8"
+            Foreground="WhiteSmoke"
+            Text="{Binding MethodDesc,Mode=OneWay}"
+            ></TextBlock>
+        <Button
+            Grid.Column="1"
+            Grid.Row="10"
+            Command="{Binding NextStepCommand}"
+            >Next</Button>
+        <Label
+            FontWeight="Bold"
+            Grid.Column="3"
+            Grid.Row="2"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            >Parameters</Label>
+        <StackPanel
+            Background="White"
+            Grid.Column="3"
+            Grid.Row="4"
+            Grid.RowSpan="7"
+            >
+            <ItemsControl ItemsSource="{Binding MethodProperties, Mode=OneWay}">
+                <ItemsControl.ItemTemplateSelector>
+                    <ts:MethodParamTemplateSelector></ts:MethodParamTemplateSelector>
+                </ItemsControl.ItemTemplateSelector>
+            </ItemsControl>
+        </StackPanel>
+    </Grid>
+</Page>

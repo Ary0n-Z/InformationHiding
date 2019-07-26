@@ -1,0 +1,103 @@
+﻿<Window x:Class="DIH_core.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:DIH_core.ViewModels"
+        xmlns:conv="clr-namespace:DIH_core.Converters"
+        mc:Ignorable="d"
+        Title="{Binding Path=Content.Title, ElementName=mainFrame}" Height="450" Width="800">
+    <Window.DataContext>
+        <vm:WindowViewModel></vm:WindowViewModel>
+    </Window.DataContext>
+
+    <Window.Resources>
+        <conv:MessageToImageConverter x:Key="MessageTypeConverter"></conv:MessageToImageConverter>
+        <Image x:Key="HomeIcon" Source="Icons/home.png"></Image>
+        <Image x:Key="BackIcon" Source="Icons/back.png"></Image>
+    </Window.Resources>
+    <Grid Background="WhiteSmoke">
+        <Grid.RowDefinitions >
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="80*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="20*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="88*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel
+            Orientation="Horizontal"
+            Grid.Row="1"
+            Grid.Column="1"
+            >
+            <Button
+            Background="Transparent"
+            BorderBrush="Transparent"
+            Grid.Row="1"
+            Grid.Column="1"
+            HorizontalAlignment="left"
+            Content="{StaticResource HomeIcon}"
+            Visibility="{Binding ViewHome,Converter={StaticResource BoolToVis},Mode=OneWay}"
+            Command="{Binding GoHomeCommand}"></Button>
+            <Button
+            Background="Transparent"
+            BorderBrush="Transparent"
+            Grid.Row="1"
+            Grid.Column="1"
+            HorizontalAlignment="left"
+            Content="{StaticResource BackIcon}"
+            Visibility="{Binding ViewBack,Converter={StaticResource BoolToVis},Mode=OneWay}"
+            Command="{Binding GoBackCommand}"></Button>
+        </StackPanel>
+            <Frame 
+            x:Name="mainFrame" 
+            Grid.Column="1"
+            Grid.Row="3"
+            Content="{Binding CurrentPage}" 
+            NavigationUIVisibility="Hidden"
+            Margin="3"
+            Background="#202020"
+            BorderBrush="#404040" 
+            Foreground="Ivory"
+            BorderThickness="2"></Frame>
+            <Border 
+                Grid.Column="1"
+                Grid.Row="5"
+                BorderThickness="3"
+                BorderBrush="#404040"
+                >
+            <ListBox
+                Background="#202020"
+                ItemsSource="{Binding OutputLogs.Messages}"                
+                >
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{Binding Type,Converter={StaticResource MessageTypeConverter}}"
+                                   ></Image>
+                            <TextBox
+                                BorderBrush="Transparent"
+                                Background="Transparent"
+                                Foreground="Ivory"
+                                IsEnabled="False"
+                                Text="{Binding Who,Mode=OneWay}" />
+                            <TextBox
+                                BorderBrush="Transparent"
+                                Background="Transparent"
+                                IsEnabled="False"
+                                
+                                Foreground="Ivory"
+                                Text="{Binding Text,Mode=OneWay}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            </Border>
+    </Grid>
+</Window>

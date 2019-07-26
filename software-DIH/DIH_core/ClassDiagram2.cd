@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="DIH_core.App" Collapsed="true">
+    <Position X="18.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DIH_core.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DIH_core.Converters.MessageToImageConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.5" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Converters\MessageToImageConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DIH_core.Pages.CodingPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\CodingPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DIH_core.Pages.MainPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\MainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DIH_core.Pages.MethodPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\MethodPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DIH_core.Properties.Resources" Collapsed="true">
+    <Position X="15" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DIH_core.Properties.Settings" Collapsed="true">
+    <Position X="16.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DIH_core.Src.Message" Collapsed="true">
+    <Position X="13.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAICAAAAAA=</HashCode>
+      <FileName>Src\Message.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DIH_core.Src.MethodConstrProp" Collapsed="true">
+    <Position X="11.75" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEQAAAAAgAABAggAAAAAAAABIQAAQQAAAAAAAA=</HashCode>
+      <FileName>Src\MethodConstrProp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DIH_core.Src.OutputLogs" Collapsed="true">
+    <Position X="16" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAEAQAAAAA=</HashCode>
+      <FileName>Src\OutputLogs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DIH_core.Src.Methods.LSBMethod" Collapsed="true">
+    <Position X="8.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAgQEAAAgBAAAAAAAAAAAAAAAAAQgAAAAA=</HashCode>
+      <FileName>Src\Methods\LSBMethod.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DIH_core.Src.Methods.MethodBase" Collapsed="true">
+    <Position X="11" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAEAAAAAAIAAAAAAAABAAAAAAAQAAA=</HashCode>
+      <FileName>Src\Methods\MethodBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DIH_core.Src.Methods.ParityCoding" Collapsed="true">
+    <Position X="10" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgwAAAAgBAAAAAAAAAAAAAAAAAAoAAAAA=</HashCode>
+      <FileName>Src\Methods\ParityCoding.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DIH_core.Src.Methods.PhaseCoding" Collapsed="true">
+    <Position X="11.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAQAAgAgwAIAAgAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Src\Methods\PhaseCoding.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DIH_core.Src.Methods.SpreadSpectrum" Collapsed="true">
+    <Position X="13.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAAAAAAAAAAgwAIAAwBAAAAAAAAAAAAAAAAAAgAAQAA=</HashCode>
+      <FileName>Src\Methods\SpreadSpectrum.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DIH_core.Src.MethodsInterface.HidingMethodParamAttribute" Collapsed="true">
+    <Position X="12.75" Y="6.5" Width="2.25" />
+    <NestedTypes>
+      <Enum Name="DIH_core.Src.MethodsInterface.HidingMethodParamAttribute.ParamType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Src\MethodsInterface\HidingMethodParamAttribute.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>QAAABAAAAAEoBAAAAAAAAAAAAAAAAIAAAwAAACAAAAA=</HashCode>
+      <FileName>Src\MethodsInterface\HidingMethodParamAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DIH_core.Src.WAV.DigitalAudio" Collapsed="true">
+    <Position X="10.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAkAAAAAEgAAAAAAAAAAACAAoQAAIAIAA=</HashCode>
+      <FileName>Src\WAV\DigitalAudio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DIH_core.Src.WAV.WavReader" Collapsed="true">
+    <Position X="18.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAQABBAAAAAAAIAACAAAAAACIIIAIAAAAAAAAAA=</HashCode>
+      <FileName>Src\WAV\WavReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DIH_core.Src.WAV.WavWriter" Collapsed="true">
+    <Position X="15.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAEAAAAIAAAAAAAAAAAAAAAAAIIAAAAAAAAAAAA=</HashCode>
+      <FileName>Src\WAV\WavWriter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DIH_core.TemplateSelectors.MethodParamTemplateSelector" Collapsed="true">
+    <Position X="8.5" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TemplateSelectors\MethodParamTemplateSelector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DIH_core.ViewModels.CodingViewModel">
+    <Position X="8.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACBgAAAIAAACAAAAAgAAAAAAgCAAAAIAAAIAIAAAA=</HashCode>
+      <FileName>ViewModels\CodingViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="cover" />
+      <Field Name="method" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DIH_core.ViewModels.InterViewModelPackage" Collapsed="true">
+    <Position X="6" Y="10.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\InterViewModelPackage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DIH_core.ViewModels.MainViewModel">
+    <Position X="10" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAQAAAAAAAAAAAAgEAAAAAAAAAAAAAgAAAAAAAAEA=</HashCode>
+      <FileName>ViewModels\MainViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Audio" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DIH_core.ViewModels.MethodViewModel">
+    <Position X="11.75" Y="10.75" Width="1.5" />
+    <AssociationLine Name="SelectedMethod" Type="DIH_core.Src.MethodsInterface.IHidingMethod">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.361" Y="0.071" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAACCAAAAAAAAAgIAAIAAAAAQAAAAAAAABAAAAAA=</HashCode>
+      <FileName>ViewModels\MethodViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SelectedMethod" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="HidingMethods" />
+      <Property Name="MethodProperties" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="DIH_core.ViewModels.NavigationViewModelBase" Collapsed="true">
+    <Position X="6" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAEAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>ViewModels\NavigationViewModelBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DIH_core.ViewModels.WindowViewModel">
+    <Position X="13.5" Y="9.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="DIH_core.ViewModels.WindowViewModel.State" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ViewModels\WindowViewModel.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AIAAAAECAAABAAAAAAGAAABAAAAQAAEEAAAQCAAAAQI=</HashCode>
+      <FileName>ViewModels\WindowViewModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Audio" />
+      <Field Name="hidingMethod" />
+      <Property Name="OutputLogs" />
+    </ShowAsAssociation>
+  </Class>
+  <Struct Name="DIH_core.Src.WAV.WaveFormat" Collapsed="true">
+    <Position X="18.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BIAAAAAAAAAAAAAAABQkAAAAACAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Src\WAV\WaveFormat.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="DIH_core.Src.MethodsInterface.IHidingMethod" Collapsed="true">
+    <Position X="10.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgQAAAAgAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Src\MethodsInterface\IHidingMethod.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="DIH_core.Src.MessageType" Collapsed="true">
+    <Position X="13.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgQAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Src\Message.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
